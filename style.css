@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@font-face {
+    font-family: 'HarryP';
+    src: url('assets/fonts/HarryP-Regular.ttf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/assets/background.webp);
+    font-family: 'HarryP', sans-serif;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    /* background: radial-gradient(circle at center, #3a0a0a, #000); */
+    color: #f0e4d7;
+}
+
+.quiz-container {
+    background: linear-gradient(135deg, #1d1d1de2, #6a3d9ace);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.2s ease;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+}
+
+#quiz h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #ffdb8e;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.answer-button {
+    background-color: #5b5b5b;
+    color: #f0e4d7;
+    border: none;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.answer-button:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-2px);
+}
+
+#next-btn {
+    background-color: #3a0a0a;
+    color: #ffcc00;
+    border: none;
+    margin-top: 20px;
+}
+
+#next-btn:hover {
+    background-color: #ffcc00;
+    color: #3a0a0a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.hidden {
+    display: none;
+}
