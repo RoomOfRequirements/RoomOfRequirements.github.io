@@ -58,4 +58,20 @@ document.getElementById("next-btn").onclick = () => {
     }
 };
 
+// Function to play audio after the first user interaction
+function playAudioOnInteraction() {
+    const audio = document.getElementById("background-audio");
+    audio.play();
+    // Remove the event listener to prevent multiple plays
+    document.removeEventListener("click", playAudioOnInteraction);
+    document.removeEventListener("keydown", playAudioOnInteraction);
+}
 displayQuestion();
+
+
+// Add event listeners for first interaction (click or key press)
+document.addEventListener("click", playAudioOnInteraction);
+document.addEventListener("keydown", playAudioOnInteraction);
+
+const audio = document.querySelector("audio");
+audio.volume = 0.05;
