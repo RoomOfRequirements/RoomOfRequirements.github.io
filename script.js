@@ -17,6 +17,11 @@ function displayQuestion() {
         answerButton.onclick = () => selectAnswer(answer);
         quizContainer.appendChild(answerButton);
     });
+    // print each houses' score
+    // console.log("Gryffindor: " + scores.score_G);
+    // console.log("Slytherin: " + scores.score_S);
+    // console.log("Hufflepuff: " + scores.score_H);
+    // console.log("Ravenclaw: " + scores.score_R);
 }
 
 function selectAnswer(answer) {
