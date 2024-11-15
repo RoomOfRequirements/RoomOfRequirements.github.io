@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(/assets/background.webp);
+    background-image: url(/assets/background.png);
     font-family: 'HarryP', sans-serif;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ body {
 .header{
     font-family: 'HarryP', serif;
     font-size: 5em;
-    color: #ffcc00;
+    color: #FFD700;
     text-shadow: 2px 2px 4px #000;
     margin: 20px;
     text-align: center;
@@ -84,8 +84,9 @@ button {
 }
 
 .answer-button {
-    background-color: #5b5b5b;
-    color: #f0e4d7;
+    background-color: #4D194D;
+    /* color: #f0e4d7; */
+    color: #F2E8FF;
     border: none;
     margin: 10px 0;
     width: 100%;
@@ -98,20 +99,20 @@ button {
 }
 
 .answer-button:hover {
-    background-color: #3a3a3a;
+    background-color: #C1A3E5;
     transform: translateY(-2px);
 }
 
 #next-btn {
-    background-color: #3a0a0a;
-    color: #ffcc00;
+    background-color: #4D194D;
+    color: #FFD700;
     border: none;
     margin-top: 20px;
 }
 
 #next-btn:hover {
-    background-color: #ffcc00;
-    color: #3a0a0a;
+    background-color: #FFD700;
+    color: #4D194D;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -120,6 +121,10 @@ button {
     font-size: 1.3em;
     color: #ffcc00;
     text-shadow: 1px 1px 2px #000;
+}
+
+.unclickable {
+    cursor: not-allowed;
 }
 
 .hidden {

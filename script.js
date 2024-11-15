@@ -1,4 +1,4 @@
-let currentQuestionIndex = 1;
+let currentQuestionIndex = 0;
 let scores = { score_G: 0, score_S: 0, score_H: 0, score_R: 0 };
 
 function displayQuestion() {
@@ -7,7 +7,7 @@ function displayQuestion() {
 
     const questionData = data[currentQuestionIndex];
     const questionText = document.createElement("h2");
-    questionText.textContent = currentQuestionIndex + "- " +questionData.Question;
+    questionText.textContent = currentQuestionIndex+1 + "- " +questionData.Question;
     quizContainer.appendChild(questionText);
 
     questionData.Answers.forEach(answer => {
@@ -50,13 +50,23 @@ function showResult() {
     document.getElementById("next-btn").classList.add("hidden");
 }
 
-document.getElementById("next-btn").onclick = () => {
-    if (currentQuestionIndex < data.length) {
-        displayQuestion();
+setInterval(() => {
+    if (currentQuestionIndex === 0) {
+        document.getElementById("next-btn").classList.add("unclickable");
     } else {
-        showResult();
+        document.getElementById("next-btn").classList.remove("unclickable");
     }
-};
+}, 100); 
+
+function goToPreviousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        displayQuestion();
+    }
+}
+
+
+
 
 // Function to play audio after the first user interaction
 function playAudioOnInteraction() {
