@@ -92,4 +92,4 @@ document.addEventListener("click", playAudioOnInteraction);
 document.addEventListener("keydown", playAudioOnInteraction);
 
 const audio = document.querySelector("audio");
-audio.volume = 0.2;
+audio.volume = 0.05;

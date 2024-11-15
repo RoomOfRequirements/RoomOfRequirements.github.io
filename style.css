@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(/assets/background.png);
+    background-image: url(/assets/background.png) ;
     font-family: 'HarryP', sans-serif;
     display: flex;
     flex-direction: column;
