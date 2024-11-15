@@ -45,11 +45,15 @@ function showResult() {
     ];
 
     houseScores.sort((a, b) => b.score - a.score);
-    resultContainer.textContent = `🎉 You belong to ${houseScores[0].house}! 🎉`;
+    resultContainer.textContent = `You belong to ${houseScores[0].house}! ${emoji(houseScores[0].house)}`;
     document.body.classList.add(houseScores[0].house.toLowerCase());
     document.getElementById("header").textContent = `Congratulations`;
+    quiz_container.classList.remove("quiz-container-neutral");
+    quiz_container.classList.add(`quiz-container-${houseScores[0].house}`);
     document.getElementById("quiz").classList.add("hidden");
     document.getElementById("next-btn").classList.add("hidden");
+    document.getElementById(`${houseScores[0].house}_banner_flag`).classList.remove("hidden");
+    document.getElementById(`${houseScores[0].house}_gif`).classList.remove("hidden");
     playHouseAudio(houseScores[0].house);
 }
 
@@ -74,7 +78,17 @@ function playHouseAudio(house) {
     audio.play();
 }
 
-
+function emoji(house){
+    if (house === "Gryffindor") {
+        return "🦁";
+    } else if (house === "Slytherin") {
+        return "🐍";
+    } else if (house === "Hufflepuff") {
+        return "🦡";
+    } else if (house === "Ravenclaw") {
+        return "🦅";
+    }
+}
 
 // Function to play audio after the first user interaction
 function playAudioOnInteraction() {
@@ -93,3 +107,5 @@ document.addEventListener("keydown", playAudioOnInteraction);
 
 const audio = document.querySelector("audio");
 audio.volume = 0.05;
+
+

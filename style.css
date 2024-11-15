@@ -10,7 +10,8 @@
 }
 
 body {
-    background-image: url(/assets/background.png) ;
+    position: relative;
+    background-image: url(/assets/images/background.png) ;
     font-family: 'HarryP', sans-serif;
     display: flex;
     flex-direction: column;
@@ -40,7 +41,15 @@ body {
     /* space the letters */
     letter-spacing: 0.2em;
 }
-.quiz-container {
+
+.banner-flag{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100px;
+}
+
+.quiz-container-neutral{
     background: linear-gradient(135deg, #1d1d1de2, #6a3d9ace);
     padding: 20px 30px;
     border-radius: 12px;
@@ -176,7 +185,8 @@ button {
 }
 
 /* house specific styles */
-/* Gryffindor - Bold and Fiery */
+
+/* Gryffindor */
 .gryffindor {
     font-family: 'Cinzel', serif;
     display: flex;
@@ -190,10 +200,35 @@ button {
     flex-direction: column;
 }
 
-.gryffindor h1, .gryffindor h2 {
-    text-shadow: 2px 2px 5px #FFC500; /* Gold glow */
+.gryffindor h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffcc00; /* Gold */
+    text-shadow: 2px 2px 5px #000;
 }
 
+.gryffindor p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f0e4d7;
+}
+
+.quiz-container-Gryffindor {
+    background: linear-gradient(135deg, #1d1d1de2, #ffcc00);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.2s ease;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: lighter;
+}
 
 /* Slytherin */
 .slytherin {
@@ -224,6 +259,20 @@ button {
     color: #d1ded1;
 }
 
+.quiz-container-Slytherin {
+    background: linear-gradient(135deg, #1d1d1de2, #a8a8a8);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.2s ease;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: lighter;
+}
 
 /* Ravenclaw */
 .ravenclaw {
@@ -254,6 +303,20 @@ button {
     color: #e2d1b5;
 }
 
+.quiz-container-Ravenclaw {
+    background: linear-gradient(135deg, #1d1d1de2, #e2d1b5);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.2s ease;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: lighter;
+}
 
 /* Hufflepuff */
 .hufflepuff {
@@ -284,6 +347,21 @@ button {
     color: #1d1d1d;
 }
 
+.quiz-container-Hufflepuff {
+    background: linear-gradient(135deg, #1d1d1de2, #1d1d1d);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.2s ease;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
 
 .body {
     font-family: 'Cinzel', serif;
@@ -294,4 +372,28 @@ button {
     margin: 0;
     background: radial-gradient(circle at center, #3a0a0a, #000);
     color: #f0e4d7;
+}
+
+.harry-potter-img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.harry-potter-img:hover {
+    transform: scale(1.05) rotate(-2deg); /* Slight zoom and tilt for charm */
+}
+
+.harry-potter-img-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background: radial-gradient(circle at center, rgba(255, 249, 220, 0.7), rgba(153, 122, 89, 0.5));
+    border-radius: 20px; /* Matches the enchanted theme */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Glowing magical touch */
+}
+
+.gif{
+    margin-top: 20px;
+    width: 100%;
 }

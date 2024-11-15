@@ -23,16 +23,26 @@
     <link rel="icon" href="https://www.pngkey.com/png/full/363-3632837_harry-potter-lightning-bolt-transparent-background.png" type="image/x-icon">
 </head>
 <body id="body">
+    <img src="assets/images/Gryffindor.png" alt="" class="banner-flag hidden harry-potter-img" id="Gryffindor_banner_flag">
+    <img src="assets/images/Hufflepuff.png" alt="" class="banner-flag hidden harry-potter-img" id="Hufflepuff_banner_flag">
+    <img src="assets/images/Ravenclaw.png" alt="" class="banner-flag hidden harry-potter-img" id="Ravenclaw_banner_flag">
+    <img src="assets/images/Slytherin.png" alt="" class="banner-flag hidden harry-potter-img" id="Slytherin_banner_flag">
     <header class="header">
         <h1 id="header">Which Hogwarts House Are You?</h1>
     </header>
     
-    <div class="quiz-container">
+    <div class="quiz-container-neutral" id="quiz_container">
         <div id="quiz" class="question"></div>
         <button id="next-btn" class="btn" onclick="goToPreviousQuestion()">Previous Question</button>
         <div id="result" class="hidden"></div>
+        <img src="https://media1.tenor.com/m/oK91UQflJuoAAAAd/gryffindor-cheering.gif" alt="" class="gif hidden" id="Gryffindor_gif">
+        <img src="https://media1.tenor.com/m/gzCv3xOzILMAAAAd/cedric-diggory-cedric.gif" alt="" class="gif hidden" id="Hufflepuff_gif">
+        <img src="https://media1.tenor.com/m/veCqVX3FP3YAAAAd/hogwarts-legacy-wizarding-world.gif" alt="" class="gif hidden" id="Ravenclaw_gif">
+        <img src="https://media1.tenor.com/m/azjDUSuOB3AAAAAd/sorting-hat-slytherin.gif" alt="" class="gif hidden" id="Slytherin_gif">
+
         <audio id="house-audio"></audio>
     </div>
+
 
 
     <!-- HP soundtrack playing in the background -->
