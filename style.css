@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 @font-face {
     font-family: 'HarryP';
-    src: url('assets/fonts/HarryP-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/HarryP-Regular.ttf') format('truetype');
 }
 * {
     box-sizing: border-box;
