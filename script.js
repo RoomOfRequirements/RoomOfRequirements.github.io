@@ -1,13 +1,13 @@
-let currentQuestionIndex = 0;
+let currentQuestionIndex = 1;
 let scores = { score_G: 0, score_S: 0, score_H: 0, score_R: 0 };
 
 function displayQuestion() {
     const quizContainer = document.getElementById("quiz");
-    quizContainer.innerHTML = ""; // Clear the previous question
+    quizContainer.innerHTML = "";
 
     const questionData = data[currentQuestionIndex];
     const questionText = document.createElement("h2");
-    questionText.textContent = questionData.Question;
+    questionText.textContent = currentQuestionIndex + "- " +questionData.Question;
     quizContainer.appendChild(questionText);
 
     questionData.Answers.forEach(answer => {
@@ -74,4 +74,4 @@ document.addEventListener("click", playAudioOnInteraction);
 document.addEventListener("keydown", playAudioOnInteraction);
 
 const audio = document.querySelector("audio");
-audio.volume = 0.05;
+audio.volume = 0.2;
