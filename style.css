@@ -174,3 +174,124 @@ button {
     color: white;
     font-weight: bold;
 }
+
+/* house specific styles */
+/* Gryffindor - Bold and Fiery */
+.gryffindor {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #3a0a0a, #000);
+    color: #f0e4d7; /* Creamy white */
+    text-align: center;
+    flex-direction: column;
+}
+
+.gryffindor h1, .gryffindor h2 {
+    text-shadow: 2px 2px 5px #FFC500; /* Gold glow */
+}
+
+
+/* Slytherin */
+.slytherin {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #0d4221, #000);
+    color: #d1ded1; /* Light silver-green */
+    text-align: center;
+    flex-direction: column;
+}
+
+.slytherin h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a8a8a8; /* Silver */
+    text-shadow: 2px 2px 5px #000;
+}
+
+.slytherin p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d1ded1;
+}
+
+
+/* Ravenclaw */
+.ravenclaw {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #12264e, #000);
+    color: #e2d1b5; /* Bronze-gold */
+    text-align: center;
+    flex-direction: column;
+}
+
+.ravenclaw h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #946b2d; /* Bronze */
+    text-shadow: 2px 2px 5px #000;
+}
+
+.ravenclaw p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e2d1b5;
+}
+
+
+/* Hufflepuff */
+.hufflepuff {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #f2c400, #000);
+    color: #1d1d1d; /* Dark black-gray */
+    text-align: center;
+    flex-direction: column;
+}
+
+.hufflepuff h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000; /* Black */
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.hufflepuff p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #1d1d1d;
+}
+
+
+.body {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #3a0a0a, #000);
+    color: #f0e4d7;
+}

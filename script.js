@@ -46,8 +46,11 @@ function showResult() {
 
     houseScores.sort((a, b) => b.score - a.score);
     resultContainer.textContent = `🎉 You belong to ${houseScores[0].house}! 🎉`;
+    document.body.classList.add(houseScores[0].house.toLowerCase());
+    document.getElementById("header").textContent = `Congratulations`;
     document.getElementById("quiz").classList.add("hidden");
     document.getElementById("next-btn").classList.add("hidden");
+    playHouseAudio(houseScores[0].house);
 }
 
 setInterval(() => {
@@ -65,6 +68,11 @@ function goToPreviousQuestion() {
     }
 }
 
+function playHouseAudio(house) {
+    const audio = document.getElementById("house-audio");
+    audio.src = `assets/audio/${house}.mp3`;
+    audio.play();
+}
 
 
 
