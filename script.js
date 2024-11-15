@@ -106,6 +106,7 @@ document.addEventListener("click", playAudioOnInteraction);
 document.addEventListener("keydown", playAudioOnInteraction);
 
 const audio = document.querySelector("audio");
-audio.volume = 0.05;
+audio.volume = 0.03;
 
-
+const house_audio = document.getElementById("house-audio");
+house_audio.volume = 0.5;
