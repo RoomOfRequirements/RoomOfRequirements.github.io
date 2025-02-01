@@ -31,11 +31,11 @@
             <td>1. Elegant and Royal</td>
             <td>
                 <div class="palette">
-                    <div class="color" style="background-color:#6A3D9A;">#6A3D9A</div>
-                    <div class="color" style="background-color:#C1A3E5;">#C1A3E5</div>
-                    <div class="color" style="background-color:#4D194D">#4D194D</div>
-                    <div class="color" style="background-color:#F2E8FF">#F2E8FF</div>
-                    <div class="color" style="background-color:#FFD700">#FFD700</div>
+                    <div class="color" style="background-color:#6A3D9A;" onclick="copy(this)">#6A3D9A</div>
+                    <div class="color" style="background-color:#C1A3E5;" onclick="copy(this)">#C1A3E5</div>
+                    <div class="color" style="background-color:#4D194D" onclick="copy(this)">#4D194D</div>
+                    <div class="color" style="background-color:#F2E8FF" onclick="copy(this)">#F2E8FF</div>
+                    <div class="color" style="background-color:#FFD700" onclick="copy(this)">#FFD700</div>
                 </div>
             </td>
         </tr>
@@ -43,48 +43,59 @@
         <tr>
             <td>2. Moody and Sophisticated</td>
             <td><div class="palette"> 
-                <div class="color" style="background-color:#6A3D9A;">#6A3D9A</div>
-                <div class="color" style="background-color:#3B2C59;">#3B2C59</div>
-                <div class="color" style="background-color:#A7BED3">#A7BED3</div>
-                <div class="color" style="background-color:#E5D4ED">#E5D4ED</div>
-                <div class="color" style="background-color:#FF5D73">#FF5D73</div>
+                <div class="color" style="background-color:#6A3D9A;" onclick="copy(this)">#6A3D9A</div>
+                <div class="color" style="background-color:#3B2C59;" onclick="copy(this)">#3B2C59</div>
+                <div class="color" style="background-color:#A7BED3" onclick="copy(this)">#A7BED3</div>
+                <div class="color" style="background-color:#E5D4ED" onclick="copy(this)">#E5D4ED</div>
+                <div class="color" style="background-color:#FF5D73" onclick="copy(this)">#FF5D73</div>
             </div></td>
         </tr>
     
             <tr>
                 <td>3. Earthy and Natural</td>
                 <td><div class="palette"> 
-                    <div class="color" style="background-color:#6A3D9A;">#6A3D9A</div>
-                    <div class="color" style="background-color:#9A6D3D;">#9A6D3D</div>
-                    <div class="color" style="background-color:#2A6041">#2A604</div>
-                    <div class="color" style="background-color:#E3DEC1">#E3DEC1</div>
-                    <div class="color" style="background-color:#F29F05">#F29F05</div>
+                    <div class="color" style="background-color:#6A3D9A;" onclick="copy(this)">#6A3D9A</div>
+                    <div class="color" style="background-color:#9A6D3D;" onclick="copy(this)">#9A6D3D</div>
+                    <div class="color" style="background-color:#2A6041" onclick="copy(this)">#2A604</div>
+                    <div class="color" style="background-color:#E3DEC1" onclick="copy(this)">#E3DEC1</div>
+                    <div class="color" style="background-color:#F29F05" onclick="copy(this)">#F29F05</div>
                 </div></td>
             </tr>
     
             <tr>
                 <td>4. Bright and Playful</td>
                 <td><div class="palette"> 
-                    <div class="color" style="background-color:#6A3D9A;">#6A3D9A</div>
-                    <div class="color" style="background-color:#F2A65A;">#F2A65A</div>
-                    <div class="color" style="background-color:#9AD3BC">#9AD3BC</div>
-                    <div class="color" style="background-color:#E2E2E2">#E2E2E2</div>
-                    <div class="color" style="background-color:#F25C5C">#F25C5C</div>
+                    <div class="color" style="background-color:#6A3D9A;" onclick="copy(this)">#6A3D9A</div>
+                    <div class="color" style="background-color:#F2A65A;" onclick="copy(this)">#F2A65A</div>
+                    <div class="color" style="background-color:#9AD3BC" onclick="copy(this)">#9AD3BC</div>
+                    <div class="color" style="background-color:#E2E2E2" onclick="copy(this)">#E2E2E2</div>
+                    <div class="color" style="background-color:#F25C5C" onclick="copy(this)">#F25C5C</div>
                 </div></td>
             </tr>
     
             <tr>
                 <td> 5. Cool and Calming</td>
                 <td> <div class="palette">
-                    <div class="color" style="background-color:#6A3D9A;">#6A3D9A</div>
-                    <div class="color" style="background-color:#34495E;">#34495E</div>
-                    <div class="color" style="background-color:#5DA3A7">#5DA3A7</div>
-                    <div class="color" style="background-color:#A7BED3">#A7BED3</div>
-                    <div class="color" style="background-color:#FAFAFA; color:black;">#FAFAFA</div>
+                    <div class="color" style="background-color:#6A3D9A;" onclick="copy(this)">#6A3D9A</div>
+                    <div class="color" style="background-color:#34495E;" onclick="copy(this)">#34495E</div>
+                    <div class="color" style="background-color:#5DA3A7" onclick="copy(this)">#5DA3A7</div>
+                    <div class="color" style="background-color:#A7BED3" onclick="copy(this)">#A7BED3</div>
+                    <div class="color" style="background-color:#FAFAFA; color:black;" onclick="copy(this)">#FAFAFA</div>
                 </div></td>
             </tr> 
             </table>
+            <script>
+                function copy(elmt)
+                    {
+                        navigator.clipboard.writeText(this.innerText).then(
+                            ()=>{console.log('text copied!);}
+                        ).catch(
+                            ()=>{console.log('text copying failed!);}
+                        );
 
+                    }
+
+            </script>
 
 
     <!-- HP soundtrack playing in the background -->
