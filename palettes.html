@@ -12,7 +12,7 @@
         gtag('config', 'G-S75MJB71K2');
         function copyToClipboard(elmt)
         {
-            navigator.clipboard.writeText(this.innerText).then(
+            navigator.clipboard.writeText(elmt.innerText).then(
                     ()=>{console.log('text copied!');}
                 ).catch(
                     ()=>{console.log('text copying failed!');}
